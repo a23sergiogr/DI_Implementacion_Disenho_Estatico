@@ -3,27 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>Vaqueros Ramon</title>
 </head>
 <body>
     <Header>
-        <img id="logotipo" src="img/Logo.png" alt="Logo">
-        <ul id="enlaces">
-            <li><a href="hombre.html">Hombres</a></li>
-            <li><a href="mujer.html">Mujer</a></li>
-            <li><a href="accesorios.html">Accesorios</a></li>
-            <li><a href="otro.html">Otro</a></li>
+        <img class="logotipo" id="logotipo" src="img/LogoSinFondo.png" alt="Logo">
+        <ul class="enlaces-otros-apartados">
+            <a href="hombre.html">Hombres</a>
+            <a href="mujer.html">Mujer</a>
+            <a href="accesorios.html">Accesorios</a>
+            <a href="otro.html">Otro</a>
         </ul>
-        <p id="barraBusqueda"></p>
+        <div class="box">
+            <form name="search">
+                <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+            </form>
+            <i class="fas fa-search"></i>
+        </div>
     </Header>
-    <nav>
-
-    </nav>
-    <section>
-
-    </section>
+    <div class="center">
+        <nav>
+            <ul class="filtros">
+                <li><h3>Hombre</h3></li>
+                <li><h3>Mujer</h3></li>
+                <li><h4>chaquetas</h4></li>
+                <li><h4>camisetas</h4></li>
+                <li><h4>pantalones</h4></li>
+                <li><h4>shorts</h4></li>
+                <li><h4>botas</h4></li>
+            </ul>
+        </nav>
+        <main>
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p></p>
+            </a>
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballero.webp" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p></p>
+            </a>
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p></p>
+            </a>
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p></p>
+            </a>
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p></p>
+            </a>
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p></p>
+            </a>            
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p></p>
+            </a>
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p></p>
+            </a>
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p></p>
+            </a>
+        </main>
+    </div>
     <footer>
+        <div class="info">
+            <div class="enlaces-adicionales">
+              <ul>
+                <li><a href="#">Información legal</a></li>
+                <li><a href="#">Política de devoluciones</a></li>
+                <li><a href="#">Preguntas frecuentes (FAQ)</a></li>
+              </ul>
+            </div>
+            
+            <div class="redes-sociales">
+              <p>Redes sociales:</p>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          
+            <div class="contacto">
+              <p>Contacto:</p>
+              <p>Teléfono: <a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+              <p>Correo: <a href="mailto:contacto@empresa.com">contacto@empresa.com</a></p>
+            </div>
+        </div>
 
+        <div class="logo_marcas">
+            <a href="https://www.ariat.com/"><img src="img/LogoMarca03SinFondo.png" alt="ariat"></a>
+            <a href="https://www.levi.com/ES/es_ES/"><img src="img/LogoMarca04sinfondo.png" alt="levis"></a>
+            <a href="https://irenevcreatividad.wordpress.com/ropa-vaquera-felix/"><img src="img/LogoMarca05.png" alt="felix"></a>
+            <a href="https://pbrbrazil.com/"><img src="img/LogoMarca06SinFondo.png" alt="PBR"></a>            
+        </div>
     </footer>
 </body>
 </html>
