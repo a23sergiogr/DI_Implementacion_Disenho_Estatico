@@ -1,120 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <script src="scripts/script.js"></script>
     <title>Vaqueros Ramon</title>
 </head>
+
 <body>
-    <Header>
-        <img class="logotipo" id="logotipo" src="img/LogoSinFondo.png" alt="Logo">
+    <Header id="header">
+        <!-- Logo en Svg -->
+        <svg width="130" height="130" xmlns="http://www.w3.org/2000/svg" class="logotipo">
+            <circle cx="65" cy="65" r="60" fill="#FFF100" stroke="#006BFF" stroke-width="5" />
+
+            <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" font-family="Wanted" font-size="26"
+                fill="#006BFF">
+                Vaqueros
+            </text>
+
+            <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" font-family="Wanted" font-size="26"
+                fill="#006BFF">
+                Ramón
+            </text>
+        </svg>
         <ul class="enlaces-otros-apartados">
             <a href="hombre.html">Hombres</a>
             <a href="mujer.html">Mujer</a>
             <a href="accesorios.html">Accesorios</a>
             <a href="otro.html">Otro</a>
         </ul>
-        <div class="box">
-            <form name="search">
-                <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
-            </form>
-            <i class="fas fa-search"></i>
-        </div>
+        <form onsubmit="event.preventDefault();" role="search">
+            <label for="search">Search for stuff</label>
+            <input id="search" type="search" placeholder="Search..." autofocus required />
+            <button type="submit">Go</button>
+        </form>
     </Header>
     <div class="center">
         <nav>
-            <ul class="filtros">
-                <li><h3>Hombre</h3></li>
-                <li><h3>Mujer</h3></li>
-                <li><h4>chaquetas</h4></li>
-                <li><h4>camisetas</h4></li>
-                <li><h4>pantalones</h4></li>
-                <li><h4>shorts</h4></li>
-                <li><h4>botas</h4></li>
+            <ul class="filtros" id="filtros">
+                <li>
+                    <h3>Hombre</h3>
+                </li>
+                <li>
+                    <h4>Chaquetas</h4>
+                </li>
+                <li>
+                    <h4>Camisetas</h4>
+                </li>
+                <li>
+                    <h4>Pantalones</h4>
+                </li>
+                <li>
+                    <h4>Shorts</h4>
+                </li>
+                <li>
+                    <h4>Botas</h4>
+                </li>
+                <br>
+                <li>
+                    <h3>Mujer</h3>
+                </li>
+                <li>
+                    <h4>Chaquetas</h4>
+                </li>
+                <li>
+                    <h4>Camisetas</h4>
+                </li>
+                <li>
+                    <h4>Pantalones</h4>
+                </li>
+                <li>
+                    <h4>Shorts</h4>
+                </li>
+                <li>
+                    <h4>Botas</h4>
+                </li>
             </ul>
         </nav>
         <main>
             <a href="#">
                 <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
                 <h2>Camiseta</h2>
-                <p></p>
+                <p>22.95€</p>
             </a>
             <a href="#">
                 <img src="img/CamisaVaqueraNegraCaballero.webp" alt="CamisetaHombre">
                 <h2>Camiseta</h2>
-                <p></p>
+                <p>22.95€</p>
             </a>
             <a href="#">
                 <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
                 <h2>Camiseta</h2>
-                <p></p>
+                <p>22.95€</p>
             </a>
             <a href="#">
                 <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
                 <h2>Camiseta</h2>
-                <p></p>
+                <p>22.95€</p>
             </a>
             <a href="#">
                 <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
                 <h2>Camiseta</h2>
-                <p></p>
+                <p>22.95€</p>
             </a>
             <a href="#">
                 <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
                 <h2>Camiseta</h2>
-                <p></p>
-            </a>            
-            <a href="#">
-                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
-                <h2>Camiseta</h2>
-                <p></p>
+                <p>22.95€</p>
             </a>
             <a href="#">
                 <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
                 <h2>Camiseta</h2>
-                <p></p>
+                <p>22.95€</p>
             </a>
             <a href="#">
                 <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
                 <h2>Camiseta</h2>
-                <p></p>
+                <p>22.95€</p>
+            </a>
+            <a href="#">
+                <img src="img/CamisaVaqueraNegraCaballeroSinfondo.png" alt="CamisetaHombre">
+                <h2>Camiseta</h2>
+                <p>22.95€</p>
             </a>
         </main>
     </div>
     <footer>
         <div class="info">
             <div class="enlaces-adicionales">
-              <ul>
-                <li><a href="#">Información legal</a></li>
-                <li><a href="#">Política de devoluciones</a></li>
-                <li><a href="#">Preguntas frecuentes (FAQ)</a></li>
-              </ul>
+                <ul>
+                    <li><a href="#">Información legal</a></li>
+                    <li><a href="#">Política de devoluciones</a></li>
+                    <li><a href="#">Preguntas frecuentes (FAQ)</a></li>
+                </ul>
             </div>
-            
+
             <div class="redes-sociales">
-              <p>Redes sociales:</p>
-              <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-              </ul>
+                <p>Redes sociales:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
             </div>
-          
+
             <div class="contacto">
-              <p>Contacto:</p>
-              <p>Teléfono: <a href="tel:+11234567890">+1 (123) 456-7890</a></p>
-              <p>Correo: <a href="mailto:contacto@empresa.com">contacto@empresa.com</a></p>
+                <p>Contacto:</p>
+                <p>Teléfono: <a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+                <p>Correo: <a href="mailto:contacto@empresa.com">contacto@empresa.com</a></p>
             </div>
         </div>
 
         <div class="logo_marcas">
             <a href="https://www.ariat.com/"><img src="img/LogoMarca03SinFondo.png" alt="ariat"></a>
             <a href="https://www.levi.com/ES/es_ES/"><img src="img/LogoMarca04sinfondo.png" alt="levis"></a>
-            <a href="https://irenevcreatividad.wordpress.com/ropa-vaquera-felix/"><img src="img/LogoMarca05.png" alt="felix"></a>
-            <a href="https://pbrbrazil.com/"><img src="img/LogoMarca06SinFondo.png" alt="PBR"></a>            
+            <a href="https://irenevcreatividad.wordpress.com/ropa-vaquera-felix/"><img src="img/LogoMarca05.png"
+                    alt="felix"></a>
         </div>
     </footer>
 </body>
+
 </html>
