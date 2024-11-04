@@ -1,20 +1,3 @@
-var scrollPos = 0;
-window.addEventListener('scroll', function () {
-    if ((document.body.getBoundingClientRect()).top > scrollPos) {
-        // Si se está desplazando hacia arriba
-        this.document.getElementById("header").style.backgroundColor = "#f6f6f6"
-        this.document.getElementById("header").style.top = "0"
-        this.document.getElementById("filtros").style.top = "140px"
-    }
-    else {
-        // Si se está desplazando hacia abajo
-        this.document.getElementById("header").style.backgroundColor = "#f6f6f6"
-        this.document.getElementById("header").style.top = "-200px"
-        this.document.getElementById("filtros").style.top = "20px"
-    }
-    scrollPos = (document.body.getBoundingClientRect()).top;
-});
-
 document.addEventListener("DOMContentLoaded", function() {
     const img1 = {
         images: [
@@ -59,12 +42,16 @@ document.addEventListener("DOMContentLoaded", function() {
     Object.keys(images).forEach(imgId => {
         const imgElement = document.getElementById(imgId); 
         
-        document.getElementById(`left-arrow-${imgId}`).addEventListener('click', () => {
+        // Update arrow ID references to match the new HTML structure
+        const leftArrow = imgElement.closest('.product').querySelector('.arrow.left');
+        const rightArrow = imgElement.closest('.product').querySelector('.arrow.right');
+
+        leftArrow.addEventListener('click', () => {
             currentIndices[imgId] = (currentIndices[imgId] - 1 + images[imgId].images.length) % images[imgId].images.length; 
             changeImage(imgId);
         });
 
-        document.getElementById(`right-arrow-${imgId}`).addEventListener('click', () => {
+        rightArrow.addEventListener('click', () => {
             currentIndices[imgId] = (currentIndices[imgId] + 1) % images[imgId].images.length;
             changeImage(imgId);
         });

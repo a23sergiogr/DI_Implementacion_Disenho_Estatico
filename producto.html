@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/producto.css">
+    <script src="scripts/header.js"></script>
+    <script src="scripts/changeImg.js"></script>
+    <script src="scripts/sizeSelector.js"></script>
+    <title>producto</title>
+</head>
+<body>
+    <Header id="header">
+        <!-- Logo en Svg -->
+        <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" class="logotipo">
+            <circle cx="40" cy="40" r="36" fill="#FFF100" stroke="#006BFF" stroke-width="4" />
+
+            <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" font-family="Wanted" font-size="16"
+                fill="#006BFF">
+                Vaqueros
+            </text>
+
+            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="Wanted" font-size="16"
+                fill="#006BFF">
+                Ramón
+            </text>
+        </svg>
+        <ul class="enlaces-otros-apartados">
+            <a href="#">Hombres</a>
+            <a href="#">Mujer</a>
+            <a href="#">Accesorios</a>
+            <a href="#">Otro</a>
+        </ul>
+        <form onsubmit="event.preventDefault();" role="search">
+            <label for="search">Search for stuff</label>
+            <input id="search" type="search" placeholder="Search..." autofocus required />
+            <button type="submit">Go</button>
+        </form>
+    </Header>
+        <main>
+            <ul class="imagenes">
+                <li><img src="img/ropa/img1/1.webp" alt=""></li>
+                <li><img src="img/ropa/img1/2.webp" alt=""></li>
+                <li><img src="img/ropa/img1/3.webp" alt=""></li>
+            </ul>
+            <div class="product">
+                <div class="image-container">
+                    <a href="producto.html">
+                        <img id="img1" src="img/ropa/img1/1.webp" alt="Imagen 1">
+                    </a>
+                    <div class="arrow left" id="left-arrow">←</div>
+                    <div class="arrow right" id="right-arrow">→</div>
+                </div>
+            </div>
+            <div class="información">
+                <h2 id="nombre">Pantalones</h2>
+                <div class="estrellas">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 25 25" aria-hidden="true" focusable="false"><polygon points="25 9.12 15.5669599 9.12 12.512219 0 9.40860215 9.12 0 9.12 7.55131965 14.856 4.47214076 24 12.512219 18.216 20.5522972 24 17.4731183 14.856" style="fill: url(&quot;#bv_rating_summary_star_filled_6_1_99.99_A87350001&quot;) !important;"></polygon><path d="" style="fill: url(&quot;#bv_rating_summary_star_filled_6_1_99.99_A87350001&quot;) !important;"></path><defs><linearGradient id="bv_rating_summary_star_filled_6_1_99.99_A87350001" x1="99.99%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(51, 51, 51); stop-opacity: 1;"></stop><stop offset="1%" style="stop-color: rgb(221, 221, 221); stop-opacity: 1;"></stop></linearGradient></defs></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 25 25" aria-hidden="true" focusable="false"><polygon points="25 9.12 15.5669599 9.12 12.512219 0 9.40860215 9.12 0 9.12 7.55131965 14.856 4.47214076 24 12.512219 18.216 20.5522972 24 17.4731183 14.856" style="fill: url(&quot;#bv_rating_summary_star_filled_6_1_99.99_A87350001&quot;) !important;"></polygon><path d="" style="fill: url(&quot;#bv_rating_summary_star_filled_6_1_99.99_A87350001&quot;) !important;"></path><defs><linearGradient id="bv_rating_summary_star_filled_6_1_99.99_A87350001" x1="99.99%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(51, 51, 51); stop-opacity: 1;"></stop><stop offset="1%" style="stop-color: rgb(221, 221, 221); stop-opacity: 1;"></stop></linearGradient></defs></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 25 25" aria-hidden="true" focusable="false"><polygon points="25 9.12 15.5669599 9.12 12.512219 0 9.40860215 9.12 0 9.12 7.55131965 14.856 4.47214076 24 12.512219 18.216 20.5522972 24 17.4731183 14.856" style="fill: url(&quot;#bv_rating_summary_star_filled_6_1_99.99_A87350001&quot;) !important;"></polygon><path d="" style="fill: url(&quot;#bv_rating_summary_star_filled_6_1_99.99_A87350001&quot;) !important;"></path><defs><linearGradient id="bv_rating_summary_star_filled_6_1_99.99_A87350001" x1="99.99%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(51, 51, 51); stop-opacity: 1;"></stop><stop offset="1%" style="stop-color: rgb(221, 221, 221); stop-opacity: 1;"></stop></linearGradient></defs></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 25 25" aria-hidden="true" focusable="false"><polygon points="25 9.12 15.5669599 9.12 12.512219 0 9.40860215 9.12 0 9.12 7.55131965 14.856 4.47214076 24 12.512219 18.216 20.5522972 24 17.4731183 14.856" style="fill: url(&quot;#bv_rating_summary_star_filled_6_1_99.99_A87350001&quot;) !important;"></polygon><path d="" style="fill: url(&quot;#bv_rating_summary_star_filled_6_1_99.99_A87350001&quot;) !important;"></path><defs><linearGradient id="bv_rating_summary_star_filled_6_1_99.99_A87350001" x1="99.99%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(51, 51, 51); stop-opacity: 1;"></stop><stop offset="1%" style="stop-color: rgb(221, 221, 221); stop-opacity: 1;"></stop></linearGradient></defs></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 25 25" aria-hidden="true" focusable="false"><polygon points="25 9.12 15.5669599 9.12 12.512219 0 9.40860215 9.12 0 9.12 7.55131965 14.856 4.47214076 24 12.512219 18.216 20.5522972 24 17.4731183 14.856" style="fill: url(&quot;#bv_rating_summary_star_filled_11_4_20.00_A87350001&quot;) !important;"></polygon><path d="" style="fill: url(&quot;#bv_rating_summary_star_filled_11_4_20.00_A87350001&quot;) !important;"></path><defs><linearGradient id="bv_rating_summary_star_filled_11_4_20.00_A87350001" x1="20.00%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(51, 51, 51); stop-opacity: 1;"></stop><stop offset="1%" style="stop-color: rgb(221, 221, 221); stop-opacity: 1;"></stop></linearGradient></defs></svg>
+                </div>
+                <h3 id="precio">22.95€</h3>  
+                <div class="size-selector">
+                    <h3>Selecciona tu talla:</h3>
+                    <ul class="size-list">
+                        <li class="size-option">XS</li>
+                        <li class="size-option">S</li>
+                        <li class="size-option">M</li>
+                        <li class="size-option">L</li>
+                        <li class="size-option">XL</li>
+                        <li class="size-option">XXL</li>
+                    </ul>
+                </div>
+                <button class="addToCart" type="button"><span>Añadir a la cesta</span></button>
+            </div>
+        </main>
+    <footer>
+        <div class="info">
+            <div class="enlaces-adicionales">
+                <ul>
+                    <li><a href="#">Información legal</a></li>
+                    <li><a href="#">Política de devoluciones</a></li>
+                    <li><a href="#">Preguntas frecuentes (FAQ)</a></li>
+                </ul>
+            </div>
+
+            <div class="redes-sociales">
+                <p>Redes sociales:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="contacto">
+                <p>Contacto:</p>
+                <p>Teléfono: <a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+                <p>Correo: <a href="mailto:contacto@empresa.com">contacto@empresa.com</a></p>
+            </div>
+        </div>
+
+        <div class="logo_marcas">
+            <a href="https://www.ariat.com/"><img src="img/LogoMarca03SinFondo.png" alt="ariat"></a>
+            <a href="https://www.levi.com/ES/es_ES/"><img src="img/LogoMarca04sinfondo.png" alt="levis"></a>
+            <a href="https://irenevcreatividad.wordpress.com/ropa-vaquera-felix/"><img src="img/LogoMarca05.png"
+                    alt="felix"></a>
+        </div>
+    </footer>
+</body>
+</html>
