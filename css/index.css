@@ -50,9 +50,6 @@ header {
     align-items: center;
     justify-items: right;
 
-    position: sticky; 
-    top: 0; 
-
     transition: top 0.3s ease, position 0.3s ease;
     z-index: 1000;
 
